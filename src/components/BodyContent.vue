@@ -102,28 +102,28 @@
             </p>
          </div>
          <v-layout class="mt-6" justify-center="">
-            <v-flex class="footer-text" xs12 md2
+            <v-flex class="footer-text" xs3 md2
                ><v-img
                   src="https://res.cloudinary.com/glamira/image/upload/c_limit,c_fill,dpr_1.0,f_auto,fl_lossy,q_auto/media/product/set55/rm6g/red_white_diamond_1.jpg"
                ></v-img>
                <h3 class="text-center">Lorem, ipsum.</h3>
                <h5 class="text-center grey--text mt-4">SHOP NOW</h5>
             </v-flex>
-            <v-flex class="footer-text" xs12 md2
+            <v-flex class="footer-text" xs3 md2
                ><v-img
                   src="https://www.brandfield.com/media/catalog/product/cache/image/9df78eab33525d08d6e5fb8d27136e95/s/w/swarovski_attract_round_ring_rose_gold_1.jpg"
                ></v-img>
                <h3 class="text-center">Lorem, ipsum.</h3>
                <h5 class="text-center grey--text mt-4">SHOP NOW</h5>
             </v-flex>
-            <v-flex class="footer-text" xs12 md2
+            <v-flex class="footer-text" xs3 md2
                ><v-img
                   src="https://res.cloudinary.com/glamira/image/upload/c_limit,c_fill,dpr_1.0,f_auto,fl_lossy,q_auto/media/product/set55/g100515/white_diamond_1.jpg"
                ></v-img>
                <h3 class="text-center">Lorem, ipsum.</h3>
                <h5 class="text-center grey--text mt-4">SHOP NOW</h5>
             </v-flex>
-            <v-flex class="footer-text" xs12 md2
+            <v-flex class="footer-text" xs3 md2
                ><v-img
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRosTaaWmhBR4e0PsQYISjiIQeKNlPU81GxdoAj88Zf_071yyP1"
                ></v-img>
