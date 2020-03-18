@@ -1,11 +1,16 @@
-import Vue from 'vue'
-import App from './App.vue'
-import './registerServiceWorker'
-import router from './router'
+import Vue from "vue";
+import "../public/scss/main.scss";
+import App from "./App.vue";
+import vuetify from "./plugins/vuetify";
+import "./registerServiceWorker";
+import router from "./router";
+import VueYoutube from "vue-youtube";
 
-Vue.config.productionTip = false
+Vue.use(VueYoutube);
+Vue.config.productionTip = false;
 
 new Vue({
-  router,
-  render: h => h(App)
-}).$mount('#app')
+   router,
+   vuetify,
+   render: h => h(App)
+}).$mount("#app");

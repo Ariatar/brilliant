@@ -1,0 +1,63 @@
+p {
+   color: rgb(53, 36, 36);
+}
+.header-text p {
+   color: white;
+}
+.footer-text h5 {
+   position: relative;
+   cursor: pointer;
+}
+.footer-text h5::before {
+   content: "";
+   position: absolute;
+   background-color: rgb(126, 118, 118);
+   top: 24px;
+   height: 2px;
+   width: 70px;
+   cursor: pointer;
+}
+.footer-text h5:hover::before {
+   width: 20px;
+   transition: 0.9s;
+   cursor: pointer;
+}
+.footer-btn:hover {
+   background-color: rgb(248, 210, 216);
+   cursor: pointer;
+}
+.header-title h2 {
+   position: relative;
+}
+.header-title h2::before {
+   position: absolute;
+   content: "";
+   background-color: rgb(168, 147, 147);
+   height: 1px;
+   width: 150px;
+   top: 5px;
+   left: -65px;
+   border-radius: 30px;
+   transform: rotate(-45deg);
+}
+.footer-p {
+   color: grey;
+}
+.header-text {
+   width: 250px;
+   position: relative;
+   top: 300px;
+   text-align: start;
+   margin-left: 20px;
+   color: white;
+   cursor: pointer;
+   font-weight: 100;
+}
+.header-text::before {
+   content: "";
+   position: absolute;
+   background-color: white;
+   top: -10px;
+   height: 1px;
+   width: 40px;
+}

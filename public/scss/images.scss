@@ -1,0 +1,27 @@
+.v-toolbar {
+   box-shadow: none;
+}
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background-size: cover;
+   background-attachment: fixed;
+}
+
+.page4,
+.page4__bg {
+   position: relative;
+   min-height: 60vh;
+}
+
+.page4__bg {
+   background: burlywood
+      url("https://pp.userapi.com/c837727/v837727332/6a021/JWBOEEG2-Y0.jpg")
+      center center no-repeat;
+   background-size: cover;
+   -webkit-clip-path: polygon(0 0, 50% 0%, 50% 10%, 0% 50%);
+   clip-path: polygon(0 40%, 100% 0, 100% 40%, 0 100%);
+}
