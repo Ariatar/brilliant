@@ -80,13 +80,15 @@
       </v-container>
       <v-container fluid="">
          <v-layout style="width: 100%; height: 735px; background: yellowgreen">
+            <v-img src="../assets/brilliant.jpg">
+               <youtube
+                  width="56%"
+                  height="100%"
+                  :video-id="videoId"
+                  ref="youtube"
+               ></youtube>
+            </v-img>
             <!-- <v-flex>Video Content</v-flex> -->
-            <youtube
-               width="100%"
-               height="100%"
-               :video-id="videoId"
-               ref="youtube"
-            ></youtube>
          </v-layout>
          <div class="mt-12">
             <h1 class="text-center">Our Most Popular Engagement Rings</h1>
