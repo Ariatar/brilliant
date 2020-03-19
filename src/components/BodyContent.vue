@@ -86,7 +86,6 @@
                height="100%"
                :video-id="videoId"
                ref="youtube"
-               @playing="playing"
             ></youtube>
          </v-layout>
          <div class="mt-12">
@@ -102,6 +101,7 @@
             </p>
          </div>
          <v-layout class="mt-6" justify-center="">
+            <!-- It's can be array also) no so difficult)  -->
             <v-flex class="footer-text" xs3 md2
                ><v-img
                   src="https://res.cloudinary.com/glamira/image/upload/c_limit,c_fill,dpr_1.0,f_auto,fl_lossy,q_auto/media/product/set55/rm6g/red_white_diamond_1.jpg"
@@ -130,6 +130,78 @@
                <h3 class="text-center">Lorem, ipsum.</h3>
                <h5 class="text-center grey--text mt-4">SHOP NOW</h5>
             </v-flex>
+            <v-flex class="footer-text" xs3 md2
+               ><v-img
+                  src="https://m.media-amazon.com/images/I/61Dy-FRVHOL._SR500,500_.jpg"
+               ></v-img>
+               <h3 class="text-center">Lorem, ipsum.</h3>
+               <h5 class="text-center grey--text mt-4">SHOP NOW</h5>
+            </v-flex>
+            <v-flex class="footer-text" xs3 md2
+               ><v-img
+                  src="https://www.dhresource.com/600x600/f2/albu/g10/M01/96/D1/rBVaVlyxgziAJlP7AAGcdpLa0UQ746.jpg"
+               ></v-img>
+               <h3 class="text-center">Lorem, ipsum.</h3>
+               <h5 class="text-center grey--text mt-4">SHOP NOW</h5>
+            </v-flex>
+         </v-layout>
+         <v-layout>
+            <carousel-3d>
+               <slide :index="0">
+                  <v-flex class="footer-text" xs7
+                     ><v-img
+                        src="https://res.cloudinary.com/glamira/image/upload/c_limit,c_fill,dpr_1.0,f_auto,fl_lossy,q_auto/media/product/set55/rm6g/red_white_diamond_1.jpg"
+                     ></v-img>
+                     <h3 class="text-center">Lorem, ipsum.</h3>
+                     <h5 class="text-center grey--text mt-4">SHOP NOW</h5>
+                  </v-flex>
+               </slide>
+               <slide :index="1">
+                  <v-flex class="footer-text" xs7
+                     ><v-img
+                        src="https://www.brandfield.com/media/catalog/product/cache/image/9df78eab33525d08d6e5fb8d27136e95/s/w/swarovski_attract_round_ring_rose_gold_1.jpg"
+                     ></v-img>
+                     <h3 class="text-center">Lorem, ipsum.</h3>
+                     <h5 class="text-center grey--text mt-4">SHOP NOW</h5>
+                  </v-flex>
+               </slide>
+               <slide :index="2">
+                  <v-flex class="footer-text" xs7
+                     ><v-img
+                        src="https://res.cloudinary.com/glamira/image/upload/c_limit,c_fill,dpr_1.0,f_auto,fl_lossy,q_auto/media/product/set55/g100515/white_diamond_1.jpg"
+                     ></v-img>
+                     <h3 class="text-center">Lorem, ipsum.</h3>
+                     <h5 class="text-center grey--text mt-4">SHOP NOW</h5>
+                  </v-flex>
+               </slide>
+               <slide :index="3">
+                  <v-flex class="footer-text" xs7
+                     ><v-img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRosTaaWmhBR4e0PsQYISjiIQeKNlPU81GxdoAj88Zf_071yyP1"
+                     ></v-img>
+                     <h3 class="text-center">Lorem, ipsum.</h3>
+                     <h5 class="text-center grey--text mt-4">SHOP NOW</h5>
+                  </v-flex>
+               </slide>
+               <slide :index="4">
+                  <v-flex class="footer-text" xs7
+                     ><v-img
+                        src="https://m.media-amazon.com/images/I/61Dy-FRVHOL._SR500,500_.jpg"
+                     ></v-img>
+                     <h3 class="text-center">Lorem, ipsum.</h3>
+                     <h5 class="text-center grey--text mt-4">SHOP NOW</h5>
+                  </v-flex>
+               </slide>
+               <slide :index="5">
+                  <v-flex class="footer-text" xs7
+                     ><v-img
+                        src="https://www.dhresource.com/600x600/f2/albu/g10/M01/96/D1/rBVaVlyxgziAJlP7AAGcdpLa0UQ746.jpg"
+                     ></v-img>
+                     <h3 class="text-center">Lorem, ipsum.</h3>
+                     <h5 class="text-center grey--text mt-4">SHOP NOW</h5>
+                  </v-flex>
+               </slide>
+            </carousel-3d>
          </v-layout>
          <v-layout class="mt-12 pa-12 ">
             <v-btn
@@ -145,7 +217,12 @@
 </template>
 
 <script>
+import { Carousel3d, Slide } from "vue-carousel-3d";
 export default {
+   components: {
+      Carousel3d,
+      Slide
+   },
    data() {
       return {
          videoId: "ydyT-Ev3r-Y"
